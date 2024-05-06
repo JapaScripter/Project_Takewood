@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="Taekwood Brinquedos">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>Taekwood Brinquedos</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS|-->
+    <link href="../aos.css" rel="stylesheet">
+    <!--|CSS|-->
+
+    <!--|Script Header and Footer Import|-->
+	<script>
+      fetch("../header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("../footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!--|Script Header and Footer Import|-->
+
+    <!--|Animation|-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init();
+    });
+    </script>
+    <!--|Animation|-->
+  </head>
+<body>
+  <!--|Header|-->
+  <header></header>
+  <!--|Header|-->
+
+  <!--|Main|-->
+  <main>
+    
+  </main>
+  <!--|Main|-->
+  
+  <!--|Footer|-->
+  <footer></footer>
+  <!--|Footer|-->
+
+  <!--|Script|-->
+  <script src="../aos.js" rel="text/javascript"></script>
+  <!--|Script|-->
+</body>
+</html>
