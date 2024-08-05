@@ -187,28 +187,28 @@
 }
 
 @media screen and (max-width:768px) {
-    #ft {
-        position: absolute;
-        display: flex;
-        width: 100%;
-        left: 0;
-        right: 0;
-        bottom: revert;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #0d0d0d;
-    }
-    .fttx {
-        font-size: 5vw;
-        font-family: "rounded";
-        text-align: center;
-        display: flex;
-        width: 100%;
-        height: 20vw;
-        justify-content: center;
-        align-items: center;
-    }
+#ft {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: revert;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0d0d0d;
+}
+.fttx {
+    font-size: 5vw;
+    font-family: "rounded";
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 #main {
@@ -226,20 +226,55 @@
     display: flex;
     width: 100%;
     height: 50vw;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background-image: url("images/hero.webp");
-    background-size: contain;
     overflow: hidden;
+    background:#f0f0f0;
+}
+
+.carousel-container {
+position: relative;
+width: 100%;
+height: 50vw;
+overflow: hidden;
+}
+.slidecarousel {
+position: absolute;
+display:flex;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 2s ease-in-out;
+}
+.slidecarousel img {
+display:flex;
+width: 60%;
+height: 45vw;
+justify-content:center;
+align-items:flex-start;
+object-fit: cover; /* Para garantir que a imagem cubra todo o espaço do contêiner */
+}
+.slidecarousel.active {
+opacity: 1;
+}
+.slidecarousel2{
+display:block;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
 }
 
 .bl {
     position: relative;
-    width: 80vw;
-    height: 80vw;
-    top: 0%;
-    right: -50%;
-    filter: blur(5vw);
+    width: 70vw;
+    height: 70vw;
+    top: -10vw;
+    left: 45vw;
+    filter: blur(2vw);
     border-radius: 50%;
     background: #f0f0f0;
 }
@@ -258,8 +293,9 @@
     line-height: 5vw;
     color: #0d0d0d;
     display: flex;
-    position: relative;
+    position: absolute;
     width: 25vw;
+    top: 15vw;
     right: 8vw;
     justify-content: center;
     align-items: center;
@@ -273,9 +309,9 @@
     text-decoration: none;
     color: #f0f0f0;
     display: flex;
-    position: relative;
-    top: 5vw;
-    right: 10vw;
+    position: absolute;
+    top: 35vw;
+    right: 15vw;
     padding: 1vw 5vw;
     justify-content: center;
     align-items: center;
