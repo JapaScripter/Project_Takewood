@@ -25,7 +25,7 @@
     position: fixed;
     display: flex;
     width: 100%;
-    height: 4vw;
+    height: 8vw;
     top: 0;
     left: 0;
     right: 0;
@@ -44,10 +44,17 @@
 }
 
 .lg {
+    position:relative;
     display: flex;
-    width: 8vw;
+    width: 15vw;
     height: auto;
+    top:1vw;
+    left:4vw;
     padding: 4vw 0 0 1vw;
+}
+
+.lg:hover{
+    transform: scale(1.2);
 }
 
 #ls {
@@ -62,14 +69,14 @@
 
 .nv {
     font-family: "rounded";
-    font-size: 0.7vw;
+    font-size: 1vw;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.2vw;
     color: transparent;
     display: flex;
-    width: 8vw;
+    width: 6vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -365,37 +372,37 @@ opacity: 0;
 #sobrenos {
     display: flex;
     width: 100%;
-    height: 45vw;
+    height: 50vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #f0f0f0;
 }
 
-.dv2 {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
+.dv2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.dv2 img{
+    display:flex;
+    width:20vw;
+    padding: 0 1vw;
+    justify-content:center;
 }
 
 .tt2 {
     font-family: "rounded";
-    font-size: 1.5vw;
+    font-size: 4vw;
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.2vw;
     color: #0d0d0d;
     display: flex;
-    width: 20%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-}
-
-.dv21 {
-    width: 80%;
-    height: 1vw;
-    border-bottom: 0.2vw solid #0d0d0d;
 }
 
 .dv22 {
@@ -531,41 +538,34 @@ opacity: 0;
     background: #f0f0f0;
 }
 
-.dv3 {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.dv3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.dv31 {
-    display: flex;
-    width: 90%;
-    height: 10vw;
-    justify-content: center;
-    align-items: center;
+.dv3 img{
+    display:flex;
+    width:20vw;
+    margin:10vw 0 5vw 0;
+    padding: 0 1vw;
+    justify-content:center;
+    align-items:center;
 }
 
 .tt3 {
     font-family: "rounded";
-    font-size: 1.5vw;
+    font-size: 4vw;
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.2vw;
     color: #0d0d0d;
     display: flex;
-    width: 30%;
+    width: 100%;
+    margin:10vw 0 5vw 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.dv32 {
-    width: 70%;
-    height: 1vw;
-    border-bottom: 0.2vw solid #0d0d0d;
 }
 
 .dv33 {
@@ -596,20 +596,6 @@ opacity: 0;
         align-items: center;
         background: #f0f0f0;
     }
-    .dv3 {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .dv31 {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
     .tt3 {
         font-family: "rounded";
         font-size: 3vw;
@@ -622,11 +608,6 @@ opacity: 0;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-    .dv32 {
-        width: 60%;
-        height: 1vw;
-        border-bottom: 0.2vw solid #0d0d0d;
     }
     .dv33 {
         display: flex;
@@ -647,40 +628,39 @@ opacity: 0;
 #parceiros {
     display: flex;
     width: 100%;
-    height: 30vw;
+    height: 40vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #f0f0f0;
 }
 
-.dv5 {
-    display: flex;
-    width: 90%;
-    height: 10vw;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.dv5{
+    display:flex;
+    margin:5vw 0 5vw 0;
+    justify-content:center;
+    align-items:center;
+}
+
+.dv5 img{
+    display:flex;
+    width:20vw;
+    padding: 0 1vw;
+    justify-content:center;
 }
 
 .tt5 {
     font-family: "rounded";
-    font-size: 1.5vw;
+    font-size: 4vw;
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.2vw;
     color: #0d0d0d;
     display: flex;
-    width: 10%;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.dv51 {
-    width: 90%;
-    height: 1vw;
-    border-bottom: 0.2vw solid #0d0d0d;
 }
 
 .tt51 {
@@ -800,32 +780,6 @@ opacity: 0;
         align-items: center;
         background: #f0f0f0;
     }
-    .dv5 {
-        display: flex;
-        width: 100%;
-        height: 50vw;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .tt5 {
-        font-family: "rounded";
-        font-size: 3vw;
-        font-weight: 700;
-        text-align: center;
-        letter-spacing: 0.2vw;
-        color: #0d0d0d;
-        display: flex;
-        width: 10vw;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .dv51 {
-        width: 80%;
-        height: 1vw;
-        border-bottom: 0.2vw solid #0d0d0d;
-    }
     @keyframes scroll {
         0% {
             transform: translateX(0);
@@ -886,31 +840,31 @@ opacity: 0;
     background: #f0f0f0;
 }
 
-.dv6 {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
+.dv6{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.dv6 img{
+    display:flex;
+    width:20vw;
+    padding: 0 1vw;
+    justify-content:center;
 }
 
 .tt6 {
     font-family: "rounded";
-    font-size: 1.5vw;
+    font-size: 4vw;
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.2vw;
     color: #0d0d0d;
     display: flex;
-    width: 10%;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.dv61 {
-    width: 90%;
-    height: 1vw;
-    border-bottom: 0.2vw solid #0d0d0d;
 }
 
 .tt61 {
@@ -1147,12 +1101,6 @@ opacity: 0;
         align-items: center;
         background: #f0f0f0;
     }
-    .dv6 {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
     .tt6 {
         font-family: "rounded";
         font-size: 3vw;
@@ -1165,11 +1113,6 @@ opacity: 0;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-    .dv61 {
-        width: 80%;
-        height: 1vw;
-        border-bottom: 0.2vw solid #0d0d0d;
     }
     .tt61 {
         font-family: "rounded";
@@ -1371,6 +1314,21 @@ opacity: 0;
         box-shadow: 0.1vw 0.1vw 1vw #0d0d0d;
         border-radius: 5vw;
     }
+}
+
+.whatsappicon{
+    position:fixed;
+    bottom:1vw;
+    right:1vw;
+    cursor:pointer;
+    z-index:99;
+    animation: shake  6s infinite ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(25deg); }
+    75% { transform: rotate(-25deg); }
 }
 
 [data-aos][data-aos][data-aos-duration="50"],
