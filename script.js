@@ -1,3 +1,494 @@
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let currentIndex = 0;
+    let currentItem = null;
+    let images = Array.from(document.querySelectorAll('.dv33 img'));
+    let additionalImages = {}; // Para armazenar as imagens adicionais
+
+    // Defina imagens adicionais para cada item
+    additionalImages["1"] = [
+        "images/GI0/Decor/01.webp",
+        "images/GI0/Decor/02.webp",
+        "images/GI0/Decor/03.webp",
+        "images/GI0/Decor/04.webp",
+        "images/GI0/Decor/100.png",
+        "images/GI0/Decor/101.png",
+        "images/GI0/Decor/102.png",
+        "images/GI0/Decor/103.png",
+        "images/GI0/Decor/104.png",
+        "images/GI0/Decor/105.png"
+    ];
+
+    additionalImages["2"] = [
+        "images/GI0/Decor/05.webp",
+        "images/GI0/Decor/06.webp",
+        "images/GI0/Decor/07.webp",
+        "images/GI0/Decor/08.webp",
+        "images/GI0/Decor/106.png",
+        "images/GI0/Decor/107.png",
+        "images/GI0/Decor/108.png",
+        "images/GI0/Decor/109.png"
+    ];
+    additionalImages["3"] = [
+        "images/GI0/Decor/09.webp",
+        "images/GI0/Decor/10.webp",
+        "images/GI0/Decor/11.webp",
+        "images/GI0/Decor/12.webp",
+        "images/GI0/Decor/110.png",
+        "images/GI0/Decor/111.png",
+        "images/GI0/Decor/112.png",
+        "images/GI0/Decor/113.png",
+        "images/GI0/Decor/114.png"
+    ];
+    additionalImages["4"] = [
+        "images/GI0/Decor/13.webp",
+        "images/GI0/Decor/14.webp",
+        "images/GI0/Decor/15.webp",
+        "images/GI0/Decor/16.webp",
+        "images/GI0/Decor/115.png",
+        "images/GI0/Decor/116.png",
+        "images/GI0/Decor/117.png",
+        "images/GI0/Decor/118.png"
+    ];
+    additionalImages["5"] = [
+        "images/GI0/Decor/17.webp",
+        "images/GI0/Decor/18.webp",
+        "images/GI0/Decor/19.webp",
+        "images/GI0/Decor/20.webp",
+        "images/GI0/Decor/119.png"
+    ];
+    additionalImages["6"] = [
+        "images/GI0/Decor/21.webp",
+        "images/GI0/Decor/22.webp",
+        "images/GI0/Decor/23.webp",
+        "images/GI0/Decor/24.webp",
+        "images/GI0/Decor/120.png",
+        "images/GI0/Decor/121.png",
+        "images/GI0/Decor/122.png",
+        "images/GI0/Decor/123.png",
+        "images/GI0/Decor/124.png",
+        "images/GI0/Decor/125.png"
+    ];
+    additionalImages["7"] = [
+        "images/GI0/Decor/25.webp",
+        "images/GI0/Decor/26.webp",
+        "images/GI0/Decor/27.webp",
+        "images/GI0/Decor/28.webp",
+        "images/GI0/Decor/126.png",
+        "images/GI0/Decor/127.png",
+        "images/GI0/Decor/128.png",
+    ];
+    additionalImages["8"] = [
+        "images/GI0/Decor/29.png",
+        "images/GI0/Decor/30.png",
+        "images/GI0/Decor/31.png",
+        "images/GI0/Decor/32.png"
+    ];
+    additionalImages["9"] = [
+        "images/GI0/Decor/33.png",
+        "images/GI0/Decor/34.png",
+        "images/GI0/Decor/35.png",
+        "images/GI0/Decor/36.png",
+        "images/GI0/Decor/129.png",
+        "images/GI0/Decor/130.png",
+        "images/GI0/Decor/131.png",
+        "images/GI0/Decor/132.png"
+    ];
+    additionalImages["10"] = [
+        "images/GI0/Decor/37.png",
+        "images/GI0/Decor/38.png",
+        "images/GI0/Decor/39.png",
+        "images/GI0/Decor/40.png",
+        "images/GI0/Decor/133.png",
+        "images/GI0/Decor/134.png"
+    ];
+    additionalImages["11"] = [
+        "images/GI0/Decor/41.png",
+        "images/GI0/Decor/42.png",
+        "images/GI0/Decor/43.png",
+        "images/GI0/Decor/44.png",
+        "images/GI0/Decor/135.png",
+        "images/GI0/Decor/136.png",
+        "images/GI0/Decor/137.png",
+        "images/GI0/Decor/138.png",
+        "images/GI0/Decor/139.png",
+        "images/GI0/Decor/140.png"
+    ];
+    additionalImages["12"] = [
+        "images/GI0/Decor/45.png",
+        "images/GI0/Decor/46.png",
+        "images/GI0/Decor/47.png",
+        "images/GI0/Decor/48.png",
+        "images/GI0/Decor/141.png",
+        "images/GI0/Decor/142.png",
+        "images/GI0/Decor/143.png"
+    ];
+    additionalImages["13"] = [
+        "images/GI0/Telhado_Vazado/01.webp",
+        "images/GI0/Telhado_Vazado/02.webp",
+        "images/GI0/Telhado_Vazado/03.webp",
+        "images/GI0/Telhado_Vazado/04.webp",
+        "images/GI0/Telhado_Vazado/100.png",
+        "images/GI0/Telhado_Vazado/101.png",
+        "images/GI0/Telhado_Vazado/102.png"
+    ];
+    additionalImages["14"] = [
+        "images/GI0/Telhado_Vazado/05.webp",
+        "images/GI0/Telhado_Vazado/06.webp",
+        "images/GI0/Telhado_Vazado/07.webp",
+        "images/GI0/Telhado_Vazado/08.webp",
+        "images/GI0/Telhado_Vazado/103.png",
+        "images/GI0/Telhado_Vazado/104.png",
+        "images/GI0/Telhado_Vazado/105.png",
+        "images/GI0/Telhado_Vazado/106.png",
+        "images/GI0/Telhado_Vazado/107.png"
+    ];
+    additionalImages["15"] = [
+        "images/GI0/Telhado_Vazado/13.png",
+        "images/GI0/Telhado_Vazado/14.png",
+        "images/GI0/Telhado_Vazado/15.png",
+        "images/GI0/Telhado_Vazado/16.png",
+        "images/GI0/Telhado_Vazado/108.png",
+        "images/GI0/Telhado_Vazado/109.png",
+        "images/GI0/Telhado_Vazado/110.png"
+    ];
+    additionalImages["16"] = [
+        "images/GI0/Telhado_Vazado/17.png",
+        "images/GI0/Telhado_Vazado/18.png",
+        "images/GI0/Telhado_Vazado/19.png",
+        "images/GI0/Telhado_Vazado/20.png"
+    ];
+    additionalImages["17"] = [
+        "images/GI0/Telhado_Vazado/09.webp",
+        "images/GI0/Telhado_Vazado/10.webp",
+        "images/GI0/Telhado_Vazado/11.webp",
+        "images/GI0/Telhado_Vazado/12.webp"
+    ];
+    additionalImages["18"] = [
+        "images/GI0/Telhado_Vazado/21.png",
+        "images/GI0/Telhado_Vazado/22.png",
+        "images/GI0/Telhado_Vazado/23.png",
+        "images/GI0/Telhado_Vazado/24.png"
+    ];
+    additionalImages["19"] = [
+        "images/GI0/Telhado_Vazado/25.png",
+        "images/GI0/Telhado_Vazado/26.png",
+        "images/GI0/Telhado_Vazado/27.png",
+        "images/GI0/Telhado_Vazado/28.png"
+    ];
+    additionalImages["20"] = [
+        "images/GI0/Telhado_Vazado/29.png",
+        "images/GI0/Telhado_Vazado/30.png",
+        "images/GI0/Telhado_Vazado/31.png",
+        "images/GI0/Telhado_Vazado/32.png"
+    ];
+    additionalImages["21"] = [
+        "images/GI0/Telhado_Vazado/33.png",
+        "images/GI0/Telhado_Vazado/34.png",
+        "images/GI0/Telhado_Vazado/35.png",
+        "images/GI0/Telhado_Vazado/36.png"
+    ];
+    additionalImages["22"] = [
+        "images/GI0/Telhado_Vazado/37.png",
+        "images/GI0/Telhado_Vazado/38.png",
+        "images/GI0/Telhado_Vazado/39.png",
+        "images/GI0/Telhado_Vazado/40.png"
+    ];
+    additionalImages["23"] = [
+        "images/GI0/Telhado_Vazado/41.png",
+        "images/GI0/Telhado_Vazado/42.png",
+        "images/GI0/Telhado_Vazado/43.png",
+        "images/GI0/Telhado_Vazado/44.png"
+    ];
+    additionalImages["24"] = [
+        "images/GI0/Telhado_Vazado/45.png",
+        "images/GI0/Telhado_Vazado/46.png",
+        "images/GI0/Telhado_Vazado/47.png",
+        "images/GI0/Telhado_Vazado/48.png"
+    ];
+    additionalImages["25"] = [
+        "images/GI0/Telhado_Vazado/49.png",
+        "images/GI0/Telhado_Vazado/50.png",
+        "images/GI0/Telhado_Vazado/51.png",
+        "images/GI0/Telhado_Vazado/52.png"
+    ];
+    additionalImages["26"] = [
+        "images/GI0/Telhado_Lonado/01.webp",
+        "images/GI0/Telhado_Lonado/02.webp",
+        "images/GI0/Telhado_Lonado/03.webp",
+        "images/GI0/Telhado_Lonado/04.webp"
+    ];
+    additionalImages["27"] = [
+        "images/GI0/Telhado_Lonado/05.jpg",
+        "images/GI0/Telhado_Lonado/06.jpg",
+        "images/GI0/Telhado_Lonado/07.jpg",
+        "images/GI0/Telhado_Lonado/08.jpg"
+    ];
+    additionalImages["28"] = [
+        "images/GI0/Telhado_Lonado/09.jpg",
+        "images/GI0/Telhado_Lonado/10.jpg",
+        "images/GI0/Telhado_Lonado/11.jpg",
+        "images/GI0/Telhado_Lonado/12.jpg"
+    ];
+    additionalImages["29"] = [
+        "images/GI0/Ombrelone/01.webp",
+        "images/GI0/Ombrelone/02.webp",
+        "images/GI0/Ombrelone/03.webp",
+        "images/GI0/Ombrelone/04.webp"
+    ];
+    additionalImages["30"] = [
+        "images/GI0/Ombrelone/05.webp",
+        "images/GI0/Ombrelone/06.webp",
+        "images/GI0/Ombrelone/07.webp",
+        "images/GI0/Ombrelone/08.webp"
+    ];
+    additionalImages["31"] = [
+        "images/GI0/Ombrelone/09.png",
+        "images/GI0/Ombrelone/10.png",
+        "images/GI0/Ombrelone/11.png",
+        "images/GI0/Ombrelone/12.png"
+    ];
+    additionalImages["32"] = [
+        "images/GI0/Ombrelone/13.png",
+        "images/GI0/Ombrelone/14.png",
+        "images/GI0/Ombrelone/15.png",
+        "images/GI0/Ombrelone/16.png"
+    ];
+    additionalImages["33"] = [
+        "images/GI0/Ombrelone/17.png",
+        "images/GI0/Ombrelone/18.png",
+        "images/GI0/Ombrelone/19.png",
+        "images/GI0/Ombrelone/20.png"
+    ];
+    additionalImages["34"] = [
+        "images/GI0/Ombrelone/21.png",
+        "images/GI0/Ombrelone/22.png",
+        "images/GI0/Ombrelone/23.png",
+        "images/GI0/Ombrelone/24.png"
+    ];
+    additionalImages["35"] = [
+        "images/GI0/Compacto/01.webp",
+        "images/GI0/Compacto/02.webp",
+        "images/GI0/Compacto/03.webp",
+        "images/GI0/Compacto/04.webp"
+    ];
+    additionalImages["36"] = [
+        "images/GI0/Compacto/05.webp",
+        "images/GI0/Compacto/06.webp",
+        "images/GI0/Compacto/07.webp",
+        "images/GI0/Compacto/08.webp"
+    ];
+    additionalImages["37"] = [
+        "images/GI0/Compacto/09.png",
+        "images/GI0/Compacto/10.png",
+        "images/GI0/Compacto/11.png",
+        "images/GI0/Compacto/12.png"
+    ];
+    additionalImages["38"] = [
+        "images/GI0/Compacto/13.png",
+        "images/GI0/Compacto/14.png",
+        "images/GI0/Compacto/15.png",
+        "images/GI0/Compacto/16.png"
+    ];
+    additionalImages["39"] = [
+        "images/GI0/Compacto/17.png",
+        "images/GI0/Compacto/18.png",
+        "images/GI0/Compacto/19.png",
+        "images/GI0/Compacto/20.png"
+    ];
+    additionalImages["40"] = [
+        "images/GI0/Compacto/21.png",
+        "images/GI0/Compacto/22.png",
+        "images/GI0/Compacto/23.png",
+        "images/GI0/Compacto/24.png"
+    ];
+    additionalImages["41"] = [
+        "images/GI0/Compacto/25.png",
+        "images/GI0/Compacto/26.png",
+        "images/GI0/Compacto/27.png",
+        "images/GI0/Compacto/28.png"
+    ];
+    additionalImages["42"] = [
+        "images/GI0/Compacto/29.png",
+        "images/GI0/Compacto/30.png",
+        "images/GI0/Compacto/31.png",
+        "images/GI0/Compacto/32.png"
+    ];
+    additionalImages["43"] = [
+        "images/GI0/Compacto/33.png",
+        "images/GI0/Compacto/34.png",
+        "images/GI0/Compacto/35.png",
+        "images/GI0/Compacto/36.png"
+    ];
+    additionalImages["44"] = [
+        "images/GI0/Compacto/37.png",
+        "images/GI0/Compacto/38.png",
+        "images/GI0/Compacto/39.png",
+        "images/GI0/Compacto/40.png"
+    ];
+    additionalImages["45"] = [
+        "images/GI0/Refrigerada/01.webp",
+        "images/GI0/Refrigerada/02.webp",
+        "images/GI0/Refrigerada/03.webp",
+        "images/GI0/Refrigerada/04.webp"
+    ];
+    additionalImages["46"] = [
+        "images/GI0/Refrigerada/05.png",
+        "images/GI0/Refrigerada/06.png",
+        "images/GI0/Refrigerada/07.png",
+        "images/GI0/Refrigerada/08.png"
+    ];
+    additionalImages["47"] = [
+        "images/GI0/Refrigerada/09.png",
+        "images/GI0/Refrigerada/10.png",
+        "images/GI0/Refrigerada/11.png",
+        "images/GI0/Refrigerada/12.png"
+    ];
+    additionalImages["48"] = [
+        "images/GI0/Refrigerada/13.png",
+        "images/GI0/Refrigerada/14.png",
+        "images/GI0/Refrigerada/15.png",
+        "images/GI0/Refrigerada/16.png"
+    ];
+    additionalImages["49"] = [
+        "images/GI0/Refrigerada/17.png",
+        "images/GI0/Refrigerada/18.png",
+        "images/GI0/Refrigerada/19.png",
+        "images/GI0/Refrigerada/20.png"
+    ];
+    additionalImages["50"] = [
+        "images/GI0/Refrigerada/21.png",
+        "images/GI0/Refrigerada/22.png",
+        "images/GI0/Refrigerada/23.png",
+        "images/GI0/Refrigerada/24.png"
+    ];
+    additionalImages["51"] = [
+        "images/GI0/Refrigerada/25.png",
+        "images/GI0/Refrigerada/26.png",
+        "images/GI0/Refrigerada/27.png",
+        "images/GI0/Refrigerada/28.png"
+    ];
+    additionalImages["52"] = [
+        "images/GI0/Balcao_Dobravel/01.webp",
+        "images/GI0/Balcao_Dobravel/02.webp",
+        "images/GI0/Balcao_Dobravel/03.webp",
+        "images/GI0/Balcao_Dobravel/04.webp"
+    ];
+    additionalImages["53"] = [
+        "images/GI0/Balcao_Dobravel/05.png",
+        "images/GI0/Balcao_Dobravel/06.png",
+        "images/GI0/Balcao_Dobravel/07.png",
+        "images/GI0/Balcao_Dobravel/08.png"
+    ];
+    additionalImages["54"] = [
+        "images/GI0/Personalizado/01.webp",
+        "images/GI0/Personalizado/02.webp",
+        "images/GI0/Personalizado/03.webp",
+        "images/GI0/Personalizado/04.webp"
+    ];
+    additionalImages["55"] = [
+        "images/GI0/Personalizado/05.webp",
+        "images/GI0/Personalizado/06.webp",
+        "images/GI0/Personalizado/07.webp",
+        "images/GI0/Personalizado/08.webp"
+    ];
+    additionalImages["56"] = [
+        "images/GI0/Personalizado/09.webp",
+        "images/GI0/Personalizado/10.webp",
+        "images/GI0/Personalizado/11.webp",
+        "images/GI0/Personalizado/12.webp"
+    ];
+    additionalImages["57"] = [
+        "images/GI0/Personalizado/13.png",
+        "images/GI0/Personalizado/14.png",
+        "images/GI0/Personalizado/15.png",
+        "images/GI0/Personalizado/16.png"
+    ];
+    additionalImages["58"] = [
+        "images/GI0/Personalizado/17.png",
+        "images/GI0/Personalizado/18.png",
+        "images/GI0/Personalizado/19.png",
+        "images/GI0/Personalizado/20.png"
+    ];
+    additionalImages["59"] = [
+        "images/GI0/Personalizado/21.png",
+        "images/GI0/Personalizado/22.png",
+        "images/GI0/Personalizado/23.png",
+        "images/GI0/Personalizado/24.png"
+    ];
+    additionalImages["60"] = [
+        "images/GI0/Personalizado/25.webp",
+        "images/GI0/Personalizado/26.webp",
+        "images/GI0/Personalizado/27.webp",
+        "images/GI0/Personalizado/28.webp"
+    ];
+
+    // Adicione mais imagens adicionais conforme necessário para outros itens
+
+    // Mostrar o modal
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            modal.style.display = "block";
+            currentIndex = index;
+            currentItem = img.getAttribute('data-item');
+            updateModalImages();
+        });
+    });
+
+    // Fechar o modal
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    // Navegar para a imagem anterior
+    prevBtn.onclick = () => {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        updateModalImages();
+    };
+
+    // Navegar para a próxima imagem
+    nextBtn.onclick = () => {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        updateModalImages();
+    };
+
+    // Fechar o modal clicando fora dele
+    window.onclick = (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    // Atualiza a imagem do modal e a lista de imagens
+    function updateModalImages() {
+        const imageSrc = images[currentIndex].src;
+        modalImage.src = imageSrc;
+
+        let additionalImagesList = additionalImages[currentItem] || [];
+        let modalImages = [imageSrc, ...additionalImagesList];
+        let currentModalIndex = modalImages.indexOf(imageSrc);
+
+        prevBtn.onclick = () => {
+            currentModalIndex = (currentModalIndex === 0) ? modalImages.length - 1 : currentModalIndex - 1;
+            modalImage.src = modalImages[currentModalIndex];
+        };
+
+        nextBtn.onclick = () => {
+            currentModalIndex = (currentModalIndex === modalImages.length - 1) ? 0 : currentModalIndex + 1;
+            modalImage.src = modalImages[currentModalIndex];
+        };
+    }
+});
+
+
+
 function toggleMenu() {
     var e = document.getElementById("lsm");
     "none" === e.style.display || "" === e.style.display ? e.style.display = "flex" : e.style.display = "none"

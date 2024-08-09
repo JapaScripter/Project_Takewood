@@ -584,6 +584,63 @@ opacity: 0;
     border: 0.2vw solid rgba(0, 0, 0, 0.8);
     box-shadow: 0.1vw 0.1vw 0.5vw #0d0d0d;
     border-radius: 2vw;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com opacidade */
+}
+
+.modal-content {
+    display: block;
+    margin:4vw auto;
+    padding:5vw;
+    width: 80%;
+    max-width: 27vw;
+    border-radius:10vw;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 768px) {
@@ -739,12 +796,12 @@ opacity: 0;
 }
 
 #cars{
-    list-style-type: none;
+    list-style-type: disc;
     position:absolute;
     display:none;
     width:15vw;
-    height:20vw;
-    padding:1vw 2vw;
+    height:25vw;
+    padding:1vw;
     flex-direction: column;
     justify-content:space-evenly;
     background:#0d0d0d;
@@ -752,9 +809,22 @@ opacity: 0;
     box-shadow:0 0 1vw #0d0d0d;
 }
 
+.divclose img{
+    width:1.5vw;
+    border:0.2vw solid #FFFFFF;
+    border-radius:2vw;
+    cursor:pointer;
+}
+
 .divclose:hover img{
     width:1.5vw;
+    transform: scale(1.1);
     cursor:pointer;
+}
+
+.licar{
+    position:relative;
+    left:1.5vw;
 }
 
 .licar:hover{
