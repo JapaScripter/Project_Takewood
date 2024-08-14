@@ -163,97 +163,176 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Telhado_Vazado/17.png",
         "images/GI0/Telhado_Vazado/18.png",
         "images/GI0/Telhado_Vazado/19.png",
-        "images/GI0/Telhado_Vazado/20.png"
+        "images/GI0/Telhado_Vazado/20.png",
+        "images/GI0/Telhado_Vazado/111.png",
+        "images/GI0/Telhado_Vazado/112.png",
+        "images/GI0/Telhado_Vazado/113.png"
     ];
     additionalImages["17"] = [
-        "images/GI0/Telhado_Vazado/09.webp",
-        "images/GI0/Telhado_Vazado/10.webp",
-        "images/GI0/Telhado_Vazado/11.webp",
-        "images/GI0/Telhado_Vazado/12.webp"
+        "images/GI0/Telhado_Vazado/09.png",
+        "images/GI0/Telhado_Vazado/10.png",
+        "images/GI0/Telhado_Vazado/11.png",
+        "images/GI0/Telhado_Vazado/12.png",
+        "images/GI0/Telhado_Vazado/114.png",
+        "images/GI0/Telhado_Vazado/115.png",
+        "images/GI0/Telhado_Vazado/116.png",
+        "images/GI0/Telhado_Vazado/117.png",
+        "images/GI0/Telhado_Vazado/118.png",
+        "images/GI0/Telhado_Vazado/119.png"
     ];
     additionalImages["18"] = [
         "images/GI0/Telhado_Vazado/21.png",
         "images/GI0/Telhado_Vazado/22.png",
         "images/GI0/Telhado_Vazado/23.png",
-        "images/GI0/Telhado_Vazado/24.png"
+        "images/GI0/Telhado_Vazado/24.png",
+        "images/GI0/Telhado_Vazado/120.png",
+        "images/GI0/Telhado_Vazado/121.png",
+        "images/GI0/Telhado_Vazado/122.png",
+        "images/GI0/Telhado_Vazado/123.png",
+        "images/GI0/Telhado_Vazado/124.png",
+        "images/GI0/Telhado_Vazado/125.png"
     ];
     additionalImages["19"] = [
         "images/GI0/Telhado_Vazado/25.png",
         "images/GI0/Telhado_Vazado/26.png",
         "images/GI0/Telhado_Vazado/27.png",
-        "images/GI0/Telhado_Vazado/28.png"
+        "images/GI0/Telhado_Vazado/28.png",
+        "images/GI0/Telhado_Vazado/126.png"
     ];
     additionalImages["20"] = [
         "images/GI0/Telhado_Vazado/29.png",
         "images/GI0/Telhado_Vazado/30.png",
         "images/GI0/Telhado_Vazado/31.png",
-        "images/GI0/Telhado_Vazado/32.png"
+        "images/GI0/Telhado_Vazado/32.png",
+        "images/GI0/Telhado_Vazado/127.png",
+        "images/GI0/Telhado_Vazado/128.png"
     ];
     additionalImages["21"] = [
         "images/GI0/Telhado_Vazado/33.png",
         "images/GI0/Telhado_Vazado/34.png",
         "images/GI0/Telhado_Vazado/35.png",
-        "images/GI0/Telhado_Vazado/36.png"
+        "images/GI0/Telhado_Vazado/36.png",
+        "images/GI0/Telhado_Vazado/129.png",
+        "images/GI0/Telhado_Vazado/130.png",
+        "images/GI0/Telhado_Vazado/131.png",
+        "images/GI0/Telhado_Vazado/132.png"
     ];
     additionalImages["22"] = [
         "images/GI0/Telhado_Vazado/37.png",
         "images/GI0/Telhado_Vazado/38.png",
         "images/GI0/Telhado_Vazado/39.png",
-        "images/GI0/Telhado_Vazado/40.png"
+        "images/GI0/Telhado_Vazado/40.png",
+        "images/GI0/Telhado_Vazado/133.png",
+        "images/GI0/Telhado_Vazado/134.png",
+        "images/GI0/Telhado_Vazado/135.png",
+        "images/GI0/Telhado_Vazado/136.png",
+        "images/GI0/Telhado_Vazado/137.png",
+        "images/GI0/Telhado_Vazado/138.png"
     ];
     additionalImages["23"] = [
         "images/GI0/Telhado_Vazado/41.png",
         "images/GI0/Telhado_Vazado/42.png",
         "images/GI0/Telhado_Vazado/43.png",
-        "images/GI0/Telhado_Vazado/44.png"
+        "images/GI0/Telhado_Vazado/44.png",
+        "images/GI0/Telhado_Vazado/139.png",
+        "images/GI0/Telhado_Vazado/140.png",
+        "images/GI0/Telhado_Vazado/141.png",
+        "images/GI0/Telhado_Vazado/142.png",
+        "images/GI0/Telhado_Vazado/143.png",
+        "images/GI0/Telhado_Vazado/144.png"
     ];
     additionalImages["24"] = [
         "images/GI0/Telhado_Vazado/45.png",
         "images/GI0/Telhado_Vazado/46.png",
         "images/GI0/Telhado_Vazado/47.png",
-        "images/GI0/Telhado_Vazado/48.png"
+        "images/GI0/Telhado_Vazado/48.png",
+        "images/GI0/Telhado_Vazado/145.png",
+        "images/GI0/Telhado_Vazado/146.png",
+        "images/GI0/Telhado_Vazado/147.png",
+        "images/GI0/Telhado_Vazado/148.png",
+        "images/GI0/Telhado_Vazado/149.png",
+        "images/GI0/Telhado_Vazado/150.png",
+        "images/GI0/Telhado_Vazado/151.png"
     ];
     additionalImages["25"] = [
         "images/GI0/Telhado_Vazado/49.png",
         "images/GI0/Telhado_Vazado/50.png",
         "images/GI0/Telhado_Vazado/51.png",
-        "images/GI0/Telhado_Vazado/52.png"
+        "images/GI0/Telhado_Vazado/52.png",
+        "images/GI0/Telhado_Vazado/152.png",
+        "images/GI0/Telhado_Vazado/153.png",
+        "images/GI0/Telhado_Vazado/154.png",
+        "images/GI0/Telhado_Vazado/155.png",
+        "images/GI0/Telhado_Vazado/156.png"
     ];
     additionalImages["26"] = [
-        "images/GI0/Telhado_Lonado/01.webp",
-        "images/GI0/Telhado_Lonado/02.webp",
-        "images/GI0/Telhado_Lonado/03.webp",
-        "images/GI0/Telhado_Lonado/04.webp"
+        "images/GI0/Telhado_Lonado/01.png",
+        "images/GI0/Telhado_Lonado/02.png",
+        "images/GI0/Telhado_Lonado/03.png",
+        "images/GI0/Telhado_Lonado/04.png",
+        "images/GI0/Telhado_Lonado/104.png",
+        "images/GI0/Telhado_Lonado/105.png",
+        "images/GI0/Telhado_Lonado/106.png"
     ];
     additionalImages["27"] = [
         "images/GI0/Telhado_Lonado/05.jpg",
         "images/GI0/Telhado_Lonado/06.jpg",
         "images/GI0/Telhado_Lonado/07.jpg",
-        "images/GI0/Telhado_Lonado/08.jpg"
+        "images/GI0/Telhado_Lonado/08.jpg",
+        "images/GI0/Telhado_Lonado/107.png",
+        "images/GI0/Telhado_Lonado/108.png",
+        "images/GI0/Telhado_Lonado/109.png",
+        "images/GI0/Telhado_Lonado/110.png",
+        "images/GI0/Telhado_Lonado/111.png",
+        "images/GI0/Telhado_Lonado/112.png"
     ];
     additionalImages["28"] = [
-        "images/GI0/Telhado_Lonado/09.jpg",
-        "images/GI0/Telhado_Lonado/10.jpg",
-        "images/GI0/Telhado_Lonado/11.jpg",
-        "images/GI0/Telhado_Lonado/12.jpg"
+        "images/GI0/Telhado_Lonado/09.png",
+        "images/GI0/Telhado_Lonado/10.png",
+        "images/GI0/Telhado_Lonado/11.png",
+        "images/GI0/Telhado_Lonado/12.png",
+        "images/GI0/Telhado_Lonado/113.png",
+        "images/GI0/Telhado_Lonado/114.png",
+        "images/GI0/Telhado_Lonado/115.png",
+        "images/GI0/Telhado_Lonado/116.png",
+        "images/GI0/Telhado_Lonado/117.png",
+        "images/GI0/Telhado_Lonado/118.png",
+        "images/GI0/Telhado_Lonado/119.png"
     ];
     additionalImages["29"] = [
         "images/GI0/Ombrelone/01.webp",
         "images/GI0/Ombrelone/02.webp",
         "images/GI0/Ombrelone/03.webp",
-        "images/GI0/Ombrelone/04.webp"
+        "images/GI0/Ombrelone/04.webp",
+        "images/GI0/Ombrelone/100.png",
+        "images/GI0/Ombrelone/101.png",
+        "images/GI0/Ombrelone/102.png",
+        "images/GI0/Ombrelone/103.png"
     ];
     additionalImages["30"] = [
         "images/GI0/Ombrelone/05.webp",
         "images/GI0/Ombrelone/06.webp",
         "images/GI0/Ombrelone/07.webp",
-        "images/GI0/Ombrelone/08.webp"
+        "images/GI0/Ombrelone/08.webp",
+        "images/GI0/Ombrelone/104.png",
+        "images/GI0/Ombrelone/105.png",
+        "images/GI0/Ombrelone/106.png",
+        "images/GI0/Ombrelone/107.png",
+        "images/GI0/Ombrelone/108.png",
+        "images/GI0/Ombrelone/109.png",
+        "images/GI0/Ombrelone/110.png",
+        "images/GI0/Ombrelone/111.png",
+        "images/GI0/Ombrelone/112.png"
     ];
     additionalImages["31"] = [
         "images/GI0/Ombrelone/09.png",
         "images/GI0/Ombrelone/10.png",
         "images/GI0/Ombrelone/11.png",
-        "images/GI0/Ombrelone/12.png"
+        "images/GI0/Ombrelone/12.png",
+        "images/GI0/Ombrelone/113.png",
+        "images/GI0/Ombrelone/114.png",
+        "images/GI0/Ombrelone/115.png",
+        "images/GI0/Ombrelone/116.png"
     ];
     additionalImages["32"] = [
         "images/GI0/Ombrelone/13.png",
@@ -277,55 +356,76 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Compacto/01.webp",
         "images/GI0/Compacto/02.webp",
         "images/GI0/Compacto/03.webp",
-        "images/GI0/Compacto/04.webp"
+        "images/GI0/Compacto/04.webp",
+        "images/GI0/Compacto/100.png",
+        "images/GI0/Compacto/101.png"
     ];
     additionalImages["36"] = [
         "images/GI0/Compacto/05.webp",
         "images/GI0/Compacto/06.webp",
         "images/GI0/Compacto/07.webp",
-        "images/GI0/Compacto/08.webp"
+        "images/GI0/Compacto/08.webp",
+        "images/GI0/Compacto/102.png",
+        "images/GI0/Compacto/103.png",
+        "images/GI0/Compacto/104.png",
+        "images/GI0/Compacto/105.png",
+        "images/GI0/Compacto/106.png",
     ];
     additionalImages["37"] = [
         "images/GI0/Compacto/09.png",
         "images/GI0/Compacto/10.png",
         "images/GI0/Compacto/11.png",
-        "images/GI0/Compacto/12.png"
+        "images/GI0/Compacto/12.png",
+        "images/GI0/Compacto/107.png"
     ];
     additionalImages["38"] = [
         "images/GI0/Compacto/13.png",
         "images/GI0/Compacto/14.png",
         "images/GI0/Compacto/15.png",
-        "images/GI0/Compacto/16.png"
+        "images/GI0/Compacto/16.png",
+        "images/GI0/Compacto/108.png",
+        "images/GI0/Compacto/109.png"
     ];
     additionalImages["39"] = [
         "images/GI0/Compacto/17.png",
         "images/GI0/Compacto/18.png",
         "images/GI0/Compacto/19.png",
-        "images/GI0/Compacto/20.png"
+        "images/GI0/Compacto/20.png",
+        "images/GI0/Compacto/110.png",
+        "images/GI0/Compacto/111.png",
+        "images/GI0/Compacto/112.png",
+        "images/GI0/Compacto/113.png"
     ];
     additionalImages["40"] = [
         "images/GI0/Compacto/21.png",
         "images/GI0/Compacto/22.png",
         "images/GI0/Compacto/23.png",
-        "images/GI0/Compacto/24.png"
+        "images/GI0/Compacto/24.png",
+        "images/GI0/Compacto/114.png"
     ];
     additionalImages["41"] = [
         "images/GI0/Compacto/25.png",
         "images/GI0/Compacto/26.png",
         "images/GI0/Compacto/27.png",
-        "images/GI0/Compacto/28.png"
+        "images/GI0/Compacto/28.png",
+        "images/GI0/Compacto/115.png",
+        "images/GI0/Compacto/116.png",
+        "images/GI0/Compacto/117.png",
+        "images/GI0/Compacto/118.png"
     ];
     additionalImages["42"] = [
         "images/GI0/Compacto/29.png",
         "images/GI0/Compacto/30.png",
         "images/GI0/Compacto/31.png",
-        "images/GI0/Compacto/32.png"
+        "images/GI0/Compacto/32.png",
+        "images/GI0/Compacto/119.png"
     ];
     additionalImages["43"] = [
         "images/GI0/Compacto/33.png",
         "images/GI0/Compacto/34.png",
         "images/GI0/Compacto/35.png",
-        "images/GI0/Compacto/36.png"
+        "images/GI0/Compacto/36.png",
+        "images/GI0/Compacto/120.png"
     ];
     additionalImages["44"] = [
         "images/GI0/Compacto/37.png",
@@ -337,31 +437,48 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Refrigerada/01.webp",
         "images/GI0/Refrigerada/02.webp",
         "images/GI0/Refrigerada/03.webp",
-        "images/GI0/Refrigerada/04.webp"
+        "images/GI0/Refrigerada/04.webp",
+        "images/GI0/Refrigerada/100.png"
     ];
     additionalImages["46"] = [
         "images/GI0/Refrigerada/05.png",
         "images/GI0/Refrigerada/06.png",
         "images/GI0/Refrigerada/07.png",
-        "images/GI0/Refrigerada/08.png"
+        "images/GI0/Refrigerada/08.png",
+        "images/GI0/Refrigerada/101.png",
+        "images/GI0/Refrigerada/102.png",
+        "images/GI0/Refrigerada/103.png"
     ];
     additionalImages["47"] = [
         "images/GI0/Refrigerada/09.png",
         "images/GI0/Refrigerada/10.png",
         "images/GI0/Refrigerada/11.png",
-        "images/GI0/Refrigerada/12.png"
+        "images/GI0/Refrigerada/12.png",
+        "images/GI0/Refrigerada/104.png",
+        "images/GI0/Refrigerada/105.png",
+        "images/GI0/Refrigerada/106.png",
+        "images/GI0/Refrigerada/107.png",
+        "images/GI0/Refrigerada/108.png",
+        "images/GI0/Refrigerada/109.png"
     ];
     additionalImages["48"] = [
         "images/GI0/Refrigerada/13.png",
         "images/GI0/Refrigerada/14.png",
         "images/GI0/Refrigerada/15.png",
-        "images/GI0/Refrigerada/16.png"
+        "images/GI0/Refrigerada/16.png",
+        "images/GI0/Refrigerada/110.png",
+        "images/GI0/Refrigerada/111.png",
+        "images/GI0/Refrigerada/112.png",
+        "images/GI0/Refrigerada/113.png"
     ];
     additionalImages["49"] = [
         "images/GI0/Refrigerada/17.png",
         "images/GI0/Refrigerada/18.png",
         "images/GI0/Refrigerada/19.png",
-        "images/GI0/Refrigerada/20.png"
+        "images/GI0/Refrigerada/20.png",
+        "images/GI0/Refrigerada/114.png",
+        "images/GI0/Refrigerada/115.png",
+        "images/GI0/Refrigerada/116.png"
     ];
     additionalImages["50"] = [
         "images/GI0/Refrigerada/21.png",
@@ -379,55 +496,85 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Balcao_Dobravel/01.webp",
         "images/GI0/Balcao_Dobravel/02.webp",
         "images/GI0/Balcao_Dobravel/03.webp",
-        "images/GI0/Balcao_Dobravel/04.webp"
+        "images/GI0/Balcao_Dobravel/04.webp",
+        "images/GI0/Balcao_Dobravel/100.png",
+        "images/GI0/Balcao_Dobravel/101.png"
     ];
     additionalImages["53"] = [
         "images/GI0/Balcao_Dobravel/05.png",
         "images/GI0/Balcao_Dobravel/06.png",
         "images/GI0/Balcao_Dobravel/07.png",
-        "images/GI0/Balcao_Dobravel/08.png"
+        "images/GI0/Balcao_Dobravel/08.png",
+        "images/GI0/Balcao_Dobravel/102.png",
+        "images/GI0/Balcao_Dobravel/103.png",
+        "images/GI0/Balcao_Dobravel/104.png"
     ];
     additionalImages["54"] = [
-        "images/GI0/Personalizado/01.webp",
-        "images/GI0/Personalizado/02.webp",
-        "images/GI0/Personalizado/03.webp",
-        "images/GI0/Personalizado/04.webp"
+        "images/GI0/Personalizado/01.png",
+        "images/GI0/Personalizado/02.png",
+        "images/GI0/Personalizado/03.png",
+        "images/GI0/Personalizado/04.png",
+        "images/GI0/Personalizado/104.png",
+        "images/GI0/Personalizado/105.png", 
+        "images/GI0/Personalizado/106.png", 
+        "images/GI0/Personalizado/107.png", 
+        "images/GI0/Personalizado/108.png"
     ];
     additionalImages["55"] = [
-        "images/GI0/Personalizado/05.webp",
-        "images/GI0/Personalizado/06.webp",
-        "images/GI0/Personalizado/07.webp",
-        "images/GI0/Personalizado/08.webp"
+        "images/GI0/Personalizado/05.png",
+        "images/GI0/Personalizado/06.png",
+        "images/GI0/Personalizado/07.png",
+        "images/GI0/Personalizado/08.png",
+        "images/GI0/Personalizado/109.png",
+        "images/GI0/Personalizado/110.png",
+        "images/GI0/Personalizado/111.png"
     ];
     additionalImages["56"] = [
         "images/GI0/Personalizado/09.webp",
         "images/GI0/Personalizado/10.webp",
         "images/GI0/Personalizado/11.webp",
-        "images/GI0/Personalizado/12.webp"
+        "images/GI0/Personalizado/12.webp",
     ];
     additionalImages["57"] = [
         "images/GI0/Personalizado/13.png",
         "images/GI0/Personalizado/14.png",
         "images/GI0/Personalizado/15.png",
-        "images/GI0/Personalizado/16.png"
+        "images/GI0/Personalizado/16.png",
+        "images/GI0/Personalizado/112.png",
+        "images/GI0/Personalizado/113.png",
+        "images/GI0/Personalizado/114.png"
     ];
     additionalImages["58"] = [
         "images/GI0/Personalizado/17.png",
         "images/GI0/Personalizado/18.png",
         "images/GI0/Personalizado/19.png",
-        "images/GI0/Personalizado/20.png"
+        "images/GI0/Personalizado/20.png",
+        "images/GI0/Personalizado/115.png",
+        "images/GI0/Personalizado/116.png",
+        "images/GI0/Personalizado/117.png"
     ];
     additionalImages["59"] = [
         "images/GI0/Personalizado/21.png",
         "images/GI0/Personalizado/22.png",
         "images/GI0/Personalizado/23.png",
-        "images/GI0/Personalizado/24.png"
+        "images/GI0/Personalizado/24.png",
+        "images/GI0/Personalizado/118.png",
+        "images/GI0/Personalizado/119.png",
+        "images/GI0/Personalizado/120.png"
     ];
     additionalImages["60"] = [
         "images/GI0/Personalizado/25.webp",
         "images/GI0/Personalizado/26.webp",
         "images/GI0/Personalizado/27.webp",
-        "images/GI0/Personalizado/28.webp"
+        "images/GI0/Personalizado/28.webp",
+        "images/GI0/Personalizado/121.png"
+    ];
+    additionalImages["61"] = [
+        "images/GI0/Personalizado/29.webp",
+        "images/GI0/Personalizado/30.webp",
+        "images/GI0/Personalizado/31.webp",
+        "images/GI0/Personalizado/32.webp",
+        "images/GI0/Personalizado/122.png"
     ];
 
     // Adicione mais imagens adicionais conforme necessário para outros itens
