@@ -299,6 +299,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Telhado_Lonado/118.png",
         "images/GI0/Telhado_Lonado/119.png"
     ];
+    additionalImages["281"] = [
+        "images/GI0/Telhado_Lonado/13.png",
+        "images/GI0/Telhado_Lonado/14.png",
+        "images/GI0/Telhado_Lonado/15.png",
+        "images/GI0/Telhado_Lonado/16.png",
+        "images/GI0/Telhado_Lonado/120.png",
+        "images/GI0/Telhado_Lonado/121.png",
+        "images/GI0/Telhado_Lonado/122.png",
+    ];
     additionalImages["29"] = [
         "images/GI0/Ombrelone/01.webp",
         "images/GI0/Ombrelone/02.webp",
@@ -433,6 +442,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Compacto/39.png",
         "images/GI0/Compacto/40.png"
     ];
+    additionalImages["441"] = [
+        "images/GI0/Compacto/41.png",
+        "images/GI0/Compacto/42.png",
+        "images/GI0/Compacto/43.png",
+        "images/GI0/Compacto/44.png"
+    ];
     additionalImages["45"] = [
         "images/GI0/Refrigerada/01.webp",
         "images/GI0/Refrigerada/02.webp",
@@ -492,6 +507,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Refrigerada/27.png",
         "images/GI0/Refrigerada/28.png"
     ];
+    additionalImages["511"] = [
+        "images/GI0/Refrigerada/29.png",
+        "images/GI0/Refrigerada/30.png",
+        "images/GI0/Refrigerada/31.png",
+        "images/GI0/Refrigerada/32.png",
+        "images/GI0/Refrigerada/117.png",
+    ];
     additionalImages["52"] = [
         "images/GI0/Balcao_Dobravel/01.webp",
         "images/GI0/Balcao_Dobravel/02.webp",
@@ -508,6 +530,14 @@ document.addEventListener("DOMContentLoaded", () => {
         "images/GI0/Balcao_Dobravel/102.png",
         "images/GI0/Balcao_Dobravel/103.png",
         "images/GI0/Balcao_Dobravel/104.png"
+    ];
+    additionalImages["53"] = [
+        "images/GI0/Balcao_Dobravel/09.png",
+        "images/GI0/Balcao_Dobravel/10.png",
+        "images/GI0/Balcao_Dobravel/11.png",
+        "images/GI0/Balcao_Dobravel/12.png",
+        "images/GI0/Balcao_Dobravel/105.png",
+        "images/GI0/Balcao_Dobravel/106.png"
     ];
     additionalImages["54"] = [
         "images/GI0/Personalizado/01.png",
