@@ -1388,8 +1388,19 @@ opacity: 0;
 
 .whatsappicon{
     position:fixed;
+    width:5vw;
     bottom:1vw;
-    right:1vw;
+    right:2vw;
+    cursor:pointer;
+    z-index:99;
+    animation: shake  6s infinite ease-in-out;
+}
+
+.instaappicon{
+    position:fixed;
+    width:4vw;
+    bottom:1.5vw;
+    right:8vw;
     cursor:pointer;
     z-index:99;
     animation: shake  6s infinite ease-in-out;
